@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Agil Irman F.</title>
+    <script src="https://kit.fontawesome.com/10b0fd111d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>A.I.F</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Profile">Profile</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#Activities">Activities</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="Home">
+            <img src="photo/ufg02vsup3lsr1plb52sk6rk05.png">
+            <div class="kolom">
+                <p class="deskripsi">Halo Semua!!!</p>
+                <h2>Yuk Kenalan dengan aku!! </h2>
+                <p>Aku Agil Irman Fadri seorang Mahasiswa UIN Suska Riau yang sedang mengambil jurusan sistem informasi</p>
+                <p><a href="#Profile" class="tbl-biru">Ketahui Lebih Lanjut</a></p>
+            </div>
+        </section>
+        <!--untuk profile-->
+        <section id="Profile">
+            <div class="kolom">
+                <p class="deskripsi"></p>
+                <h2>Profile</h2>
+                <p>Nama panjangku Agil Irman Fadri. Aku lahir pada tangal 4 Desember 2003 di Pariaman. Walaupun aku lahir
+                    di Sumatera Barat,tetapi aku besar dan tumbuh di Riau,yaitu kota Pekanbaru. Saat ini kesibukan aku 
+                    yaitu menjadi seorang mahasiswa di Universitas Islam Negeri Sultan Syarif Kasim Riau. Aku mengambil 
+                    jurusan Sistem Informasi karena ketertarikan aku dengan dunia teknologi. Jadi itu aja ya tetang aku, 
+                    Salam Kenal semuanya!!  
+                </p>
+            </div>
+            <img src="photo/WhatsApp Image 2023-10-28 at 20.15.06.jpeg"></div>
+        </section>
+        <!--untuk gallery-->
+        <section id="Gallery">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Gallery</p>
+                    <h2>My Gallery</h2>
+                </div>
+            
+            <div class="container">
+                <div class="slide" style="background-image: url(full/WhatsApp\ Image\ 2023-10-28\ at\ 20.35.58\ \(1\).jpeg);">
+                    <h3></h3>
+                </div>
+                <div class="slide" style="background-image: url(full/WhatsApp\ Image\ 2023-10-28\ at\ 20.35.58.jpeg);">
+                    <h3></h3>
+                </div>
+                <div class="slide" style="background-image: url(full/WhatsApp\ Image\ 2023-10-28\ at\ 20.56.58.jpeg);">
+                    <h3></h3>
+                </div>
+                <div class="slide" style="background-image: url(full/WhatsApp\ Image\ 2023-10-29\ at\ 14.01.26.jpeg);">
+                    <h3></h3>
+                </div>
+                <div class="slide" style="background-image: url(full/WhatsApp\ Image\ 2023-10-28\ at\ 20.58.22.jpeg);">
+                    <h3></h3>
+                </div>
+
+            </div>
+        </div>
+            <script>
+                activesslideimg();
+
+                function activesslideimg(activeSlide = 2){
+                    const slides = document.querySelectorAll(".slide");
+                    slides[activeSlide].classList.add("active");
+
+                    for (const slide of slides) {
+                        slide.addEventListener("click", ()=> {
+                            clearActiveClasses();
+
+                            slide.classList.add("active");
+                        });
+                    }
+
+                    function clearActiveClasses() {
+                        slides.forEach((slide) => {
+                            slide.classList.remove("active");
+                        })
+                    }
+                }
+            </script>
+          
+    </section>
+    <!--untuk activities-->
+    <section id="Activities">
+        <div class="tengah">
+            <div class="kolom">
+                <p class="deskripsi">Activities</p>
+                <h2>My Activities</h2>
+                <p></p>
+            </div>
+
+            <div class="keseharian">
+                <div class="activities-list">
+                    <img src="full/WhatsApp Image 2023-10-28 at 20.55.13.jpeg">
+                    <h2>Mahasiswa</h2>
+                    <p>Saya adalah seorang mahasiswa di UIN Suska Riau yang sedang mengambil jurusan sistem informasi</p>
+                </div>
+                <div class="activities-list">
+                    <img src="full/WhatsApp Image 2023-10-30 at 16.26.19.jpeg">
+                    <h2>Milad Sistem Informasi</h2>
+                    <p>Menghadiri acara milad sistem informasi yang ke-21, yang mana acara tersebut sangat meriah. </p>
+                </div>
+                <div class="activities-list">
+                    <img src="full/WhatsApp Image 2023-10-28 at 20.35.57.jpeg">
+                    <h2>Panitia Fortasi 2023 </h2>
+                    <p>Saya mengikuti anggota kepanitiaan fortasi 2023, saya sendiri masuk kedalam divisi Kp(kakak Pembimbing)</p>
+                </div>
+                <div class="activities-list">
+                    <img src="full/WhatsApp Image 2023-10-30 at 16.29.53.jpeg">
+                    <h2>PBAK Si angkatan 23</h2>
+                    <p>Mengikuti kepanitian PBAK dan masuk kedalam anggota divisi Kp(Kakak Pembimbing) </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--untuk contact-->
+    <section id="Contact">
+        <div class="contact-text">
+            <h2> Contact <span>Me</span></h2>
+            <div class="contact-info">
+                <div class="contact-box">
+                    <div class="contact">
+                    <h4>Address</h4>
+                    <p>Jl. Cipta Karya Ujung, Pekanbaru, Riau</p>
+                </div>
+                <div class="contact">
+                    <h4>Email</h4>
+                    <p>agilirmanfadri@gmail.com</p>
+                </div>
+                <div class="contact">
+                    <h4>No Hp.</h4>
+                    <p>+62823*******</p>
+                </div>
+                <div class="contact">
+                    <h4>Country.</h4>
+                    <p>Indonesia</p>
+                </div>
+               
+              </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Agil Irman Fadri</p>
+        <p>Follow juga social media aku.</p>
+        <div class="social">
+            <a href="https://youtube.com/@agilirmanf.7029?si=337OrCL5QbBucITJ"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/agilirman.fadri.3?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/agil_irmanfadri?igshid=ajdoOWxsYmZnaGIw"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@agl_irmn?_t=8gwbOEidHhC&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <div class="end">CopyRight By AgilIrmanFadri</div>
+    </footer>
+</body>
+</html>

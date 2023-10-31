@@ -1,0 +1,391 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #205295;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+
+.logo a {
+    font-size: 25px;
+    font-weight: 750;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #144272;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    border-bottom: 1px solid blue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    color: white;
+
+}
+
+#Profile img {
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: 'Trebuchet MS';
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: #205295;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #1cdaa1;
+    text-decoration: underline;
+}
+
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*gllery*/
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+
+.container {
+    width: 1250px;
+    display: flex;
+    padding: 0 20px;
+}
+
+.slide {
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: blue;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+    filter: blur(4px);
+}
+
+.slide h3 {
+    position: absolute;
+    font-size: clamp(1rem, 5vw, 5rem);
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background-color: #144272;
+    background-image: linear-gradient(-225deg, rgb(70, 41, 231) 0%,  rgb(56, 56, 255) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide.active {
+    flex: 10;
+    filter: blur(0px);
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 50rem) {
+    .container {
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .slide {
+        width: 90vw;
+        border-radius: 20px;
+        margin: 10px;
+    }
+}
+
+/*activities*/
+
+.keseharian {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.activities-list {
+    padding: 30px;
+	flex-basis: 50%;
+    width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+
+.activities-list img {
+    flex-basis: 50%;
+    width: 100%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+    border: 50%;
+}
+
+
+
+/*contact */
+#Contact {
+    width: 100%;
+    margin-right: 25px;
+    background-color: #29323c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text h2 {
+    color: white;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-box {
+    color: white;
+}
+
+.contact-box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact {
+    width: 25%;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+
+.contact h4 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #29323c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer :nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: #fcfc;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    background: red;
+    
+    margin: 20px 10px;
+    color: white;
+    border: 2px solid white;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    background: transparent;
+    border: 2px solid red;
+}
+
+.end {
+    position: absolute;
+    color: white;
+    bottom: 65px;
+    font-size: 16px;
+}
+
+
+@media Screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .keseharian {
+        width: 100%;
+    }
+
+    .contact-text {
+        width: 100%;
+    }
+
+
+
+}
